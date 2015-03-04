@@ -12,11 +12,23 @@ class PlayoffsPageViewController: UIPageViewController, UIPageViewControllerDele
     
     var myViewControllers : [UIViewController] = []
     
+//    override func viewWillAppear(animated: Bool) {
+//        super.viewWillAppear(true)
+//        self.navigationController?.setNavigationBarHidden(true, animated: false)
+//    }
+//    
+//    override func viewWillDisappear(animated: Bool) {
+//        super.viewWillDisappear(true)
+//        self.navigationController?.setNavigationBarHidden(false, animated: false)
+//    }
+    
     override func viewDidLoad() {
+    
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         
+//        self.automaticallyAdujstsPageViewInsets = false
         self.delegate = self
         self.dataSource = self
         
