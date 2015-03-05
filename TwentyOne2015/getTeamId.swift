@@ -23,7 +23,7 @@ func getTeamId (teamNum: Int) -> String{
 //    #11. Lincoln Land = "ad1T70EBmD"
 //    #12. Iowa = "IFntLhNac2"
 //    #13. Asheville = "yrUnBoLGXH"
-//    #14. Granada = "UBIDBRm48C"
+//    #14. Kirkwood CC = "UBIDBRm48C"
 //    #15. UTI = "9x8LWIRLgk"
 //    #16. Oregon State = "RvmHbDBsNx"
     
@@ -41,7 +41,7 @@ func getTeamId (teamNum: Int) -> String{
 func getTeamNameFromNumber (teamNumber: Int) -> String{
     
     
-    var teamNameList = ["Salisbury State", "Purdue", "Morehead State", "Illinois", "Duke", "America University", "Phoenix", "Grown Ass Man U", "SMU", "Indiana", "Lincoln Land", "Iowa", "Asheville", "Granada", "UTI", "Oregon State"]
+    var teamNameList = ["Salisbury State", "Purdue", "Morehead State", "Illinois", "Duke", "America University", "Phoenix", "Grown Ass Man U", "SMU", "Indiana", "Lincoln Land", "Iowa", "Asheville", "Kirkwood CC", "UTI", "Oregon State"]
     
     var teamName = teamNameList[teamNumber-1]
     

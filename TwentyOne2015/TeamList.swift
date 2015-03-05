@@ -14,7 +14,7 @@ class TeamList: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     
     @IBOutlet weak var teamTableView: UITableView!
     
-    var nameList = ["Salisbury State", "Purdue", "Morehead", "Illinois", "Duke", "America University", "Phoenix", "Grown Ass Man U", "SMU", "Indiana", "Lincoln Land", "Iowa", "Asheville", "Granada", "UTI", "Oregon State"]
+    var nameList = ["Salisbury State", "Purdue", "Morehead", "Illinois", "Duke", "America University", "Phoenix", "Grown Ass Man U", "SMU", "Indiana", "Lincoln Land", "Iowa", "Asheville", "Kirkwood CC", "UTI", "Oregon State"]
     
     var teamPicked = ""
     var displayName = ""
@@ -138,8 +138,8 @@ class TeamList: UIViewController, UITableViewDelegate, UITableViewDataSource  {
         }
         if indexPath.row == 13{
             teamPicked = nameList[13]
-            displayName = "Granada"
-            parseName = "Granada"
+            displayName = "Kirkwood CC"
+            parseName = "Kirkwood CC"
             teamNum = 14
             performSegueWithIdentifier("teamDataSegue", sender: self)
         }

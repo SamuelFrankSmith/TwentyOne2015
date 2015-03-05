@@ -11,7 +11,7 @@ import Foundation
 
 class GameScreen: UIViewController, UITextFieldDelegate {
     
-    let correctPassword = "21"
+    let correctPassword = "  Y6"
     var passwordEntered = ""
     
     var roundNumber = 0

@@ -49,7 +49,7 @@ class ViewController: UIViewController {
 //        }
 //    }
     
-    let correctPassword = "21"
+    let correctPassword = "  Y6"
     var passwordEntered = ""
     
     
