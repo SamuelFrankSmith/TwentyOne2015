@@ -49,8 +49,9 @@ class ViewController: UIViewController {
 //        }
 //    }
     
-    let correctPassword = "  Y6"
+    let correctPassword = "F2i8wrck"
     var passwordEntered = ""
+    var admin = false
     
     
     @IBOutlet weak var newWordField: UITextField!
@@ -59,7 +60,7 @@ class ViewController: UIViewController {
         passwordEntered = self.newWordField.text
         
         if passwordEntered == correctPassword{
-            initializeData()
+            admin = true
         } else {
             displayAlert()
         }
@@ -83,8 +84,36 @@ class ViewController: UIViewController {
 
     @IBAction func initializeBtn(sender: AnyObject) {
         displayAlert()
+        if admin == true{
+            initializeData()
+        }
         
     }
+    
+    @IBAction func InitializePlayoffs(sender: AnyObject) {
+        displayAlert()
+        if admin == true{
+            var teamRankList: [String] = ["L89EcuMeDz", "m77Ffi4iYk", "nSgUdbIWVa", "0a3QtCTyej", "5vSP2bXKdH", "ljCV4fz6Pw", "VoCdWZce2O", "P273Yw1lS6", "UBIDBRm48C", "9x8LWIRLgk", "ad1T70EBmD", "yrUnBoLGXH", "IFntLhNac2", "RvmHbDBsNx", "UqYi6HCyUe", "8vk6hSqQPj"]
+            
+            for i in 0...15{
+                var team = PFObject(className: "Team")
+                var query = PFQuery(className: "Team")
+                query.getObjectInBackgroundWithId(teamRankList[i]){
+                    (team: PFObject!, error: NSError!) -> Void in
+                    if error != nil{
+                        //Error scenario here
+                        NSLog("%@", error)
+                    } else {
+                        team["PlayoffArray"] = [0,0,0,0,0]
+                        team.save()
+                    }
+                }
+            }
+            
+        }
+        
+    }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
