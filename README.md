@@ -3,6 +3,8 @@ This is the app for the 2015 Twenty-One Tournament.
 
 As of right now, the idea for next year (2016) is to use the same app and just make updates to what's already in place. If anyone wants to contrubute, feel free to create a fork and do some work.
 
+Here is a link to the Trello board that keeps track of the things we're trying to accomplish next: https://trello.com/b/xQlRuUmb/twentyone-app
+
 A couple notes:
 - Everything is written in Swift so you'll need XCode 6 or higher to contribute.
 
