@@ -30,6 +30,7 @@ func initializeData () {
                 team["losses"] = 0
                 team["CD"] = 0
                 team["recordArray"] = [0,0,0,0,0,0,0,0,0,0]
+//                team["PlayoffArray"] = [0,0,0,0,0]
                 team.save()
             }
         }
